@@ -1,0 +1,7 @@
+Connectivity Analysis Results:
+Original number of connected components: 1
+Components after removing node 'J511': 2
+Is node 'J511' an articulation point? True
+
+Components after removing link 'P1': 2
+Is link 'P1' a bridge? True

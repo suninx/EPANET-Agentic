@@ -1,0 +1,9 @@
+Maximum Water Age: 24.00 hours
+  - Location: Node 'J418'
+  - Time: 86400 seconds (24.00 hours)
+
+Minimum Water Age: 0.00 hours
+  - Location: Node 'J511'
+  - Time: 0 seconds (0.00 hours)
+
+Average Water Age: 3.53 hours

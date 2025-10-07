@@ -1,0 +1,31 @@
+[
+  {
+    "task_id": "base",
+    "description": "load 'data/L-TOWN.inp', simulate a chemical booster scenario at node 'n2' using the SETPOINT method with a strength of 1000 and an activation pattern from 24h to 48h, run the water quality simulation and plot the time series of quality through node 'n352'."
+  },
+  {
+    "task_id": "no_punctuation",
+    "description": "load 'data/L-TOWN.inp' simulate a chemical booster scenario at node n2 using the SETPOINT method with a strength of 1000 and an activation pattern from 24h to 48h run the water quality simulation and plot the time series of quality through node n352"
+  },
+  {
+    "task_id": "missing_parameters",
+    "description": "load 'data/L-TOWN.inp', simulate a chemical booster scenario using the SETPOINT method with a strength of 1000 and an activation pattern from 24h to 48h, run the water quality simulation and plot the time series of quality through node 'n352'."
+  },
+  {
+    "task_id": "missing_sentence",
+    "description": "load 'data/L-TOWN.inp', simulate a chemical booster scenario at node 'n2' using the SETPOINT method with a strength of 1000 and an activation pattern from 24h to 48h, plot the time series of quality through node 'n352'."
+  },
+  {
+    "task_id": "explain",
+    "description": "load 'data/L-TOWN.inp', simulate a chemical booster scenario at node 'n2' using a source that maintains a fixed concentration at the node's outflow, with a strength of 1000 and an activation pattern from 24h to 48h, run the water quality simulation and plot the quality distribution at time 24h."
+  },
+  {
+    "task_id": "order",
+    "description": "load 'data/L-TOWN.inp', simulate water quality after applying a chemical booster at 'n2' that maintains a strength of 1000 between 24h to 48h using the SETPOINT method, and plot the resulting quality time series at 'n352'."
+  },
+  {
+    "task_id": "ask_Taskrouter",
+    "description": "Apply a chemical booster scenario at node 'J511' where a fixed concentration of 1000 is maintained at the outflow of the node from 2h to 15h",
+    "input": "data/L-TOWN.inp"
+  }
+]

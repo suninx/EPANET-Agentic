@@ -1,0 +1,4 @@
+Network Connectivity Analysis Results:
+========================================
+Node 'n1' is articulation point: False
+Link 'p1' is bridge: False

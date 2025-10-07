@@ -1,0 +1,6 @@
+Topological Metrics for Node 'n1':
+---------------------------------
+Degree: 1
+Eccentricity: 76
+Betweenness Centrality: 0.000000
+Closeness Centrality: 0.024196

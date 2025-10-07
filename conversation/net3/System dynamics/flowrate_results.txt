@@ -1,0 +1,11 @@
+Flowrate Analysis Results:
+--------------------------------
+Maximum Flowrate: 0.833146 m3/s
+  - Location: Link '60'
+  - Time: 82800 seconds
+
+Minimum Flowrate: -0.283993 m3/s
+  - Location: Link '20'
+  - Time: 14400 seconds
+
+Average Flowrate: 0.068326 m3/s

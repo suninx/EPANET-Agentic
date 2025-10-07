@@ -1,0 +1,2 @@
+Articulation point analysis for node '10': True
+Bridge analysis for link '20': False

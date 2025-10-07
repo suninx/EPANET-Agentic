@@ -1,0 +1,3 @@
+Links connected to node '10':
+101
+10

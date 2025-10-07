@@ -1,0 +1,12 @@
+Pressure Analysis Results
+=========================
+
+Maximum pressure: 73.9897 m
+  - Location: Node n336
+  - Time: 15600 seconds
+
+Minimum pressure: 0.0000 m
+  - Location: Node R1
+  - Time: 0 seconds
+
+Average pressure: 46.1090 m

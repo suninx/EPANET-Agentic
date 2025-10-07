@@ -1,0 +1,11 @@
+WATER AGE RESULTS
+==================
+Maximum water age: 168.00 hours
+- Location: Node n259
+- Time: 168.00 hours
+
+Minimum water age: 0.00 hours
+- Location: Node n1
+- Time: 0.00 hours
+
+Average water age: 6.21 hours

@@ -1,0 +1,11 @@
+Chlorine Concentration Analysis:
+--------------------------------
+Maximum: 1.0000 mg/L
+  Location: J273
+  Time: 900 seconds
+
+Minimum: 0.0000 mg/L
+  Location: J511
+  Time: 0 seconds
+
+Network Average: 0.8104 mg/L

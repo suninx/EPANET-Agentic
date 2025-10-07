@@ -1,0 +1,4 @@
+Metrics for node '1':
+Degree: 2
+Betweenness Centrality: 0.054238
+Closeness Centrality: 0.018509

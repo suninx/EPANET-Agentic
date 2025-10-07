@@ -1,0 +1,38 @@
+[
+  {
+    "task_id": "leak",
+    "description": "load 'data/ctown.inp', simulate a leak scenario at pipe 'P789' and 'P831' with a leak area of 0.05 m² and 0.02 m² occurring from 18000 to 36000 seconds, run the hydraulic simulation, and then plot the time series of flow rate through pipe 'P789' and 'P831'."
+  },
+  {
+    "task_id": "chemical_booster-01",
+    "description": "load 'data/ctown.inp', simulate a chemical booster scenario at node 'J511' using the SETPOINT method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node 'J503'."
+  },
+  {
+    "task_id": "chemical_booster-02",
+    "description": "load 'data/ctown.inp', simulate a chemical booster scenario at node 'J511' using the CONCEN method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node 'J503'."
+  },
+  {
+    "task_id": "chemical_booster-03",
+    "description": "load 'data/ctown.inp', simulate a chemical booster scenario at node 'J511' using the MASS method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node 'J503'."
+  },
+  {
+    "task_id": "chemical_booster-04",
+    "description": "load 'data/ctown.inp', simulate a chemical booster scenario at node 'J511' using the FLOWPACED method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node 'J503'."
+  },
+  {
+    "task_id": "contamination",
+    "description": "load 'data/ctown.inp', simulate a contamination event at node 'R1', run a water quality tracer simulation, and plot a time series plot of tracer concentration (%) for node 'T1'"
+  },
+  {
+    "task_id": "power_outage",
+    "description": "load 'data/ctown.inp', simulate a power outage for pump 'PU1g1' from 3600 to 7200 seconds, run the hydraulic simulation, and plot the time series of the this pump's status"
+  },
+  {
+    "task_id": "fire",
+    "description": "load 'data/ctown.inp', simulate a fire event at junction 'J511' with a demand of 0.2 LPS from 3600 to 7200 seconds, run the hydraulic simulation and plot the time series of flow rate through link 'P349'."
+  },
+  {
+    "task_id": "earthquake",
+    "description": "load 'data/ctown.inp', simulate an earthquake with an epicenter at (14000, 6000), magnitude 6.5, and depth 10000 m, and visualize the PGA distribution associated with each link across the network as a topology map."
+  }
+]

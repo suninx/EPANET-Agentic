@@ -1,0 +1,9 @@
+Maximum chlorine concentration: 1.0000 mg/L
+  Location: R1
+  Time: 0 seconds (0.00 hours)
+
+Minimum chlorine concentration: 0.0000 mg/L
+  Location: n1
+  Time: 0 seconds (0.00 hours)
+
+Average chlorine concentration: 0.4746 mg/L

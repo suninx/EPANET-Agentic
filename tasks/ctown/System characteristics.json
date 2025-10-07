@@ -1,0 +1,46 @@
+[
+  {
+    "task_id": "basic-01",
+    "description": "load 'data/ctown.inp', tell me how many junctions, tanks, reservoirs, pipes, pumps and valves in this WDN."
+  },
+  {
+    "task_id": "basic-02",
+    "description": "load 'data/ctown.inp', tell me which links are connected to node 'J511'."
+  },
+  {
+    "task_id": "basic-03",
+    "description": "load 'data/ctown.inp', tell me what are the start and end nodes of link 'P1'?."
+  },
+  {
+    "task_id": "basic+compare_logic-01",
+    "description": "load 'data/ctown.inp', list all pipes with length greater than 600m."
+  },
+  {
+    "task_id": "basic+compare_logic-02",
+    "description": "load 'data/ctown.inp', list all pipes with diameters greater than 600mm."
+  },
+  {
+    "task_id": "basic+compare_logic-03",
+    "description": "load 'data/ctown.inp', list all pipes with roughness greater than 120."
+  },
+  {
+    "task_id": "basic+compare_logic-04",
+    "description": "load 'data/ctown.inp', list all nodes with elevation greater than 110m."
+  },
+  {
+    "task_id": "Indicator_calculation-01",
+    "description": "load 'data/ctown.inp', tell me the link density, central point dominance, and average shortest path length of the network."
+  },
+  {
+    "task_id": "Indicator_calculation-02",
+    "description": "load 'data/ctown.inp', tell me which nodes in the network are terminal nodes?"
+  },
+  {
+    "task_id": "Indicator_calculation-03",
+    "description": "load 'data/ctown.inp', tell me about the following metrics for node 'J511': degree, eccentricity, betweenness centrality, and closeness centrality."
+  },
+  {
+    "task_id": "Indicator_calculation-04",
+    "description": "load 'data/ctown.inp', tell me whether node 'J511' is an articulation point and whether link 'P1' is a bridge."
+  }
+]

@@ -1,0 +1,11 @@
+Water Age Analysis Results:
+---------------------------------
+Maximum Water Age: 86399.86 seconds
+  - Location: 131
+  - Time: 86400 seconds
+
+Minimum Water Age: 18.11 seconds
+  - Location: 60
+  - Time: 0 seconds
+
+Average Water Age: 21978.52 seconds

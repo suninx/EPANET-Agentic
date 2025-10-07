@@ -1,0 +1,46 @@
+[
+  {
+    "task_id": "basic-01",
+    "description": "load 'data/L-TOWN.inp', tell me how many junctions, tanks, reservoirs, pipes, pumps and valves in this WDN."
+  },
+  {
+    "task_id": "basic-02",
+    "description": "load 'data/L-TOWN.inp', tell me which links are connected to node 'n1'."
+  },
+  {
+    "task_id": "basic-03",
+    "description": "load 'data/L-TOWN.inp', tell me what are the start and end nodes of link 'p1'?."
+  },
+  {
+    "task_id": "basic+compare_logic-01",
+    "description": "load 'data/L-TOWN.inp', list all pipes with length greater than 75m."
+  },
+  {
+    "task_id": "basic+compare_logic-02",
+    "description": "load 'data/L-TOWN.inp', list all pipes with diameters greater than 200mm."
+  },
+  {
+    "task_id": "basic+compare_logic-03",
+    "description": "load 'data/L-TOWN.inp', list all pipes with roughness greater than 120."
+  },
+  {
+    "task_id": "basic+compare_logic-04",
+    "description": "load 'data/L-TOWN.inp', list all nodes with elevation greater than 75m."
+  },
+  {
+    "task_id": "Indicator_calculation-01",
+    "description": "load 'data/L-TOWN.inp', tell me the link density, central point dominance, and average shortest path length of the network."
+  },
+  {
+    "task_id": "Indicator_calculation-02",
+    "description": "load 'data/L-TOWN.inp', tell me which nodes in the network are terminal nodes?"
+  },
+  {
+    "task_id": "Indicator_calculation-03",
+    "description": "load 'data/L-TOWN.inp', tell me about the following metrics for node 'n1': degree, eccentricity, betweenness centrality, and closeness centrality."
+  },
+  {
+    "task_id": "Indicator_calculation-04",
+    "description": "load 'data/L-TOWN.inp', tell me whether node 'n1' is an articulation point and whether link 'p1' is a bridge."
+  }
+]

@@ -1,0 +1,10 @@
+Flow Rate Analysis Results:
+Maximum Flow: 0.034482 m3/s 
+  - Location: Link 'p235'
+  - Time: 330600 seconds
+
+Minimum Flow: -0.034132 m3/s 
+  - Location: Link 'p110'
+  - Time: 330600 seconds
+
+Average Flow: -0.000085 m3/s (across all links and times)

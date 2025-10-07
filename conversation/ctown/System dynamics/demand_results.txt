@@ -1,0 +1,11 @@
+Demand Analysis Results:
+----------------------------
+Maximum Demand: 0.109942 m3/s
+- Location: Node 'T1'
+- Time: 14400 seconds
+
+Minimum Demand: -0.303479 m3/s
+- Location: Node 'R1'
+- Time: 0 seconds
+
+Average Demand: 0.000000 m3/s

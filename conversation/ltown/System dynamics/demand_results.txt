@@ -1,0 +1,3 @@
+Maximum demand: 0.000854 m³/s at node 'n480' at time 300600 seconds
+Minimum demand: 0.000000 m³/s at node 'n95' at time 0 seconds
+Average demand: 0.000063 m³/s

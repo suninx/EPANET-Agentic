@@ -1,0 +1,11 @@
+Demand Analysis Results:
+=========================
+Maximum demand: 0.292928 m3/s
+  - Location: Node '203'
+  - Time: 28800 seconds
+
+Minimum demand: -0.833146 m3/s
+  - Location: Node 'River'
+  - Time: 82800 seconds
+
+Average demand: -0.000000 m3/s

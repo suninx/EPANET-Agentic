@@ -1,0 +1,34 @@
+[
+  {
+    "task_id": "single_rule+one_action+time_condition-01",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' at 24h (86400s), run hydraulic simulation and plot the status time series of link 'PRV-3'."
+  },
+  {
+    "task_id": "single_rule+one_action+time_condition-02",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' every 12h (43200s), run hydraulic simulationand plot the status time series of link 'PRV-3'."
+  },
+  {
+    "task_id": "single_rule+one_action+time_condition-03",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' every 12h (43200s) and starts from 24h (86400s), run hydraulic simulation and plot the status time series of link 'PRV-3'."
+  },
+  {
+    "task_id": "single_rule+one_action+value_condition",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' when node 'T1' pressure exceeds 3.7m, run hydraulic simulation and plot the status time series of link 'PRV-3'."
+  },
+  {
+    "task_id": "single_rule+two_action+value_condition",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' and link 'PRV-2' when node 'T1' pressure exceeds 3.7m, run hydraulic simulation and plot the status time series of link 'PRV-3' and 'PRV-2'."
+  },
+  {
+    "task_id": "single_rule+one_action+two_condition(and)",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' when node 'T1' pressure > 3.7m AND time >= 24h, run hydraulic simulation and plot the status time series of link 'PRV-3'."
+  },
+  {
+    "task_id": "single_rule+one_action+two_condition(or)",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-3' when node 'T1' pressure > 3.7m OR time >= 24h, run hydraulic simulation and plot the status time series of link 'PRV-3'."
+  },
+  {
+    "task_id": "multiple_rules",
+    "description": "load 'data/L-TOWN.inp', 1.close link 'PRV-3' when tank 'T1' pressure > 3.7m; 2.open link 'PRV-3' when tank 'T1' pressure < 3.0m, run hydraulic simulation and plot the status time series of link 'PRV-3'."
+  }
+]

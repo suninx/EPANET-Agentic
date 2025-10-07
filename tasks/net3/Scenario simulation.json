@@ -1,0 +1,38 @@
+[
+  {
+    "task_id": "leak",
+    "description": "load 'data/net3.inp', simulate a leak scenario at pipe '20' and '40' with a leak area of 0.05 m² and 0.02 m² occurring from 18000 to 36000 seconds,, run the hydraulic simulation, and then plot the time series of flow rate through pipe '20' and '40'."
+  },
+  {
+    "task_id": "chemical_booster-01",
+    "description": "load 'data/net3.inp', simulate a chemical booster scenario at node '10' using the SETPOINT method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node '101'."
+  },
+  {
+    "task_id": "chemical_booster-02",
+    "description": "load 'data/net3.inp', simulate a chemical booster scenario at node '10' using the CONCEN method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node '101'."
+  },
+  {
+    "task_id": "chemical_booster-03",
+    "description": "load 'data/net3.inp', simulate a chemical booster scenario at node '10' using the MASS method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node '101'."
+  },
+  {
+    "task_id": "chemical_booster-04",
+    "description": "load 'data/net3.inp', simulate a chemical booster scenario at node '10' using the FLOWPACED method with a strength of 1000 and an activation pattern from 2h to 15h, run the water quality simulation and plot the time series of quality through node '101'."
+  },
+  {
+    "task_id": "contamination",
+    "description": "load 'data/net3.inp', simulate a contamination event at node 'River', run a water quality tracer simulation, and plot a time series plot of tracer percent for node '10'"
+  },
+  {
+    "task_id": "power_outage",
+    "description": "load 'data/net3.inp', simulate a power outage for pump '10' from 3600 to 7200 seconds, run the hydraulic simulation, and plot the time series of the this pump's status"
+  },
+  {
+    "task_id": "fire",
+    "description": "load 'data/net3.inp', simulate a fire event at junction '101' with a demand of 0.2 LPS from 3600 to 7200 seconds, run the hydraulic simulation and plot the time series of flow rate through link '101'."
+  },
+  {
+    "task_id": "earthquake",
+    "description": "load 'data/net3.inp', simulate an earthquake with an epicenter at (14000, 6000), magnitude 6.5, and depth 10000 m, and visualize the PGA distribution associated with each link across the network as a topology map."
+  }
+]

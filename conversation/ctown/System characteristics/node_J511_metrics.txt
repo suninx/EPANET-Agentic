@@ -1,0 +1,4 @@
+Degree: 2
+Eccentricity: 59
+Betweenness Centrality: 0.044644
+Closeness Centrality: 0.029684

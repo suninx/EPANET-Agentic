@@ -1,0 +1,10 @@
+Shortest path from 119 to 193:
+Total path length: 2572.51 meters
+Number of segments: 5
+
+Path details:
+119 -> 120 via Pipe (length: 222.50 m)
+120 -> 117 via Pipe (length: 569.98 m)
+117 -> 115 via Pipe (length: 664.46 m)
+115 -> 113 via Pipe (length: 609.60 m)
+113 -> 193 via Pipe (length: 505.97 m)

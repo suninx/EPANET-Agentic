@@ -1,0 +1,12 @@
+Pressure Analysis Results:
+========================================
+Maximum Pressure: 289.35 m
+  - Location: Node 1977
+  - Time: 3600 seconds
+
+Minimum Pressure: 0.00 m
+  - Location: Node 640
+  - Time: 0 seconds
+
+Average Pressure: 58.50 m
+========================================

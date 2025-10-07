@@ -1,0 +1,5 @@
+Node 10 Metrics:
+Degree: 2
+Eccentricity: 23
+Betweenness Centrality: 0.020833333333333332
+Closeness Centrality: 0.09248554913294797

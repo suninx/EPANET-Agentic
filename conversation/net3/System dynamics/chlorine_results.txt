@@ -1,0 +1,11 @@
+Water Quality Simulation Results - Chlorine Concentrations
+====================================================
+Maximum concentration: 1.0000 mg/L
+Location: Node 15
+Time: 12.00 hours
+
+Minimum concentration: 0.0000 mg/L
+Location: Node 10
+Time: 0.00 hours
+
+Average concentration: 0.3879 mg/L

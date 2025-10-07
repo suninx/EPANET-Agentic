@@ -1,0 +1,38 @@
+[
+  {
+    "task_id": "System characteristics-01",
+    "description": "load 'data/L-TOWN.inp', tell me how many junctions, tanks, reservoirs, pipes, pumps and valves in this WDN."
+  },
+  {
+    "task_id": "System characteristics-02",
+    "description": "load 'data/L-TOWN.inp', list the 10 longest pipes in the network along with their lengths."
+  },
+  {
+    "task_id": "System characteristics-03",
+    "description": "load 'data/L-TOWN.inp', tell me about the following metrics for node 'n1': degree, eccentricity, betweenness centrality, and closeness centrality. Then, analyze the results to interpret the topological importance of this node within the network."
+  },
+  {
+    "task_id": "System dynamic-01",
+    "description": "load 'data/L-TOWN.inp', run hydraulic simulation and plot the pressure distribution at time 24h."
+  },
+  {
+    "task_id": "System dynamic-02",
+    "description": "load 'data/L-TOWN.inp', set the initial chlorine concentration of the node 'R1' to 1 mg/L, then run water quality simulation (chlorine) and plot the quality distribution at time 24h."
+  },
+  {
+    "task_id": "System dynamic-03",
+    "description": "load 'data/L-TOWN.inp', Perform a hydraulic simulation and plot the pressure distribution at time 24h. Then, increase all pipe diameters to 1.5 times their original values, run the simulation again, and plot the new pressure distribution at time 24h. Finally, analyze the differences between the two pressure distribution plots before and after the pipe diameter change."
+  },
+  {
+    "task_id": "System operation-01",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-2' at 24h (86400s), run hydraulic simulation and plot the pressure time series of upstream node 'n111'."
+  },
+  {
+    "task_id": "System operation-02",
+    "description": "load 'data/L-TOWN.inp', close link 'PRV-2' when node 'T1' pressure > 3.7m AND time >= 24h, run hydraulic simulation and plot the pressure time series of upstream node 'n111'."
+  },
+  {
+    "task_id": "System operation-03",
+    "description": "load 'data/L-TOWN.inp', 1.close link 'PRV-2' when tank 'T1' pressure > 3.7m; 2.open link 'PRV-2' when tank 'T1' pressure < 2.8m, run hydraulic simulation and plot the status time series of of downstream node 'n111'. Analyze the impact of valve operations on downstream pressure behavior."
+  }
+]

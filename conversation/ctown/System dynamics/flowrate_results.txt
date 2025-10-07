@@ -1,0 +1,11 @@
+Flow Rate Analysis Results:
+--------------------------------------------------
+Maximum Flow Rate: 0.303479 m3/s
+  - Location: Link 'P310'
+  - Time: 0 seconds
+
+Minimum Flow Rate: -0.302591 m3/s
+  - Location: Link 'P100'
+  - Time: 0 seconds
+
+Average Flow Rate: 0.011073 m3/s

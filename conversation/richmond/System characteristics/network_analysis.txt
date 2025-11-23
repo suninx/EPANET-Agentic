@@ -1,2 +1,0 @@
-Node '1' is an articulation point: True
-Link '785' is a bridge: True

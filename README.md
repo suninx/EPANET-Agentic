@@ -65,6 +65,23 @@ python main.py
 
 ---
 
-## 📜 License
 
-For research and academic use. You may use and modify the code for non-commercial purposes.
+## 📚 Reference / Citation
+
+If you use EPANET-Agentic in academic work, please cite:
+
+Wang, J., Fu, G., & Savic, D. (2026). *EPANET-Agentic: A Multi-Agent System for Natural Language-Controlled Simulations of Water Distribution Networks*. **Water Research**, 125433. https://doi.org/10.1016/j.watres.2026.125433
+
+### BibTeX
+
+```bibtex
+@article{Wang2026EPANETAgentic,
+  title   = {EPANET-Agentic: A Multi-Agent System for Natural Language-Controlled Simulations of Water Distribution Networks},
+  author  = {Jian Wang, Guangtao Fu, Dragan Savic},
+  journal = {Water Research},
+  year    = {2026},
+  pages   = {125433},
+  issn    = {0043-1354},
+  doi     = {10.1016/j.watres.2026.125433},
+  url     = {https://doi.org/10.1016/j.watres.2026.125433}
+}

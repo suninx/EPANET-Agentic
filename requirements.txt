@@ -1,7 +1,13 @@
 autogen-agentchat==0.6.1
 autogen-core==0.6.1
-autogen-ext==0.6.1
+# the [openai] extra is required by autogen_ext.models.openai, used in llm.py
+autogen-ext[openai]==0.6.1
+openai==3.26.1
 wntr==1.3.2
+# wntr 1.3.2 imports pkg_resources, which setuptools 81+ no longer ships
+setuptools<81
 networkx==3.5
 Pillow==11.2.1
 typing_extensions==4.14.0
+# reads the .env file that llm.py expects
+python-dotenv==1.2.4

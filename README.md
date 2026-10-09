@@ -3,6 +3,12 @@
 EPANET-Agentic is a multi-agent system that uses Large Language Models to automate simulation, control, and analysis tasks for water distribution networks.
 It transforms natural language instructions into executable workflows, from `.inp` file validation and disaster scenario simulation to control logic generation, result visualization, and analysis.
 
+> 🇬🇧 **Note** — [README.zh-CN.md](README.zh-CN.md) documents this fork's *measured* install and run steps, the `.env` key setup, the Windows console encoding requirement, and how the model API has changed since the paper was written (measured: `deepseek-chat` and `deepseek-reasoner` still respond, but both are now served by the *same* model — `deepseek-flash` — in two thinking modes). It is **not** a translation of this README.
+>
+> 🇨🇳 **说明** — [README.zh-CN.md](README.zh-CN.md) 记录本仓库实测过的安装/运行步骤、`.env` 密钥配置、Windows 控制台编码要求，以及上游模型接口相对论文写作时已发生的变化（实测：`deepseek-chat` / `deepseek-reasoner` 仍可调用，但两者现已由**同一个**模型 `deepseek-flash` 以两种思考档位提供服务）。这不是本 README 的翻译。
+>
+> Engineering conventions for contributors and coding agents · 面向贡献者与编码助手的工程约定：[AGENTS.md](AGENTS.md)
+
 ---
 
 ## 🚀 Key Features

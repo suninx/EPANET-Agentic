@@ -14,6 +14,10 @@ DataAnalyzer (Qwen-VL reads plots and result files).
 Only three agents call an LLM. `CodeExecutorAgent` and `UserProxyAgent` do not — the
 first runs Python locally, the second waits for keyboard input.
 
+For setup steps written for humans (with the error messages you will actually see),
+see [README.zh-CN.md](README.zh-CN.md); this file is the terse, verified contract for
+whoever is editing the code.
+
 ## Entry points
 
 - `main.py` — reads `tasks/manuscript.json`, **hard-coded index `tasks[8]`**
@@ -94,12 +98,26 @@ python -c "from llm import deepseekV3; import asyncio; print(asyncio.run(deepsee
 - `deepseek-chat` and `deepseek-reasoner` are declared `"vision": False` (corrected from
   `True`; text-only models). A `True` claim disables Autogen's image-stripping guard and
   lets images reach an API that rejects them.
-- `deepseekR1` declares `"function_calling": True`, but the R1 API historically did not
-  support tool calling. Left as upstream because no agent passes `tools=` to it. Revisit
-  before attaching tools to `coder`.
-- DeepSeek's current model table lists `deepseek-flash` and `deepseek-v4-pro`; the two
-  names hardcoded in `llm.py` are no longer listed. **Unverified** whether they still
-  resolve, alias to one serving model, or error. Confirm with the probe command above
-  before concluding that two different models are in play.
+- `deepseekR1` declares `"function_calling": True`. That was false for the original R1 model,
+  but is now true by accident: the alias is served by V4.1 Flash, and a real multi-turn
+  `AssistantAgent(tools=...)` run against `deepseek-reasoner` completed successfully. The
+  `coder` agent still passes no tools, so nothing changes today.
+- DeepSeek's model table now lists `deepseek-flash` and `deepseek-v4-pro`. Measured with a real
+  key: `deepseek-chat` and `deepseek-reasoner` still respond, and both report
+  `model="deepseek-flash"` - one serving model in two thinking modes, not two models.
+  `deepseek-v4-pro` is genuinely separate. **Do not switch `llm.py` to `deepseek-flash`**
+  without also disabling thinking: thinking is on by default (effort high), Autogen never
+  sends `reasoning_content` back, and DeepSeek rejects the multi-turn tool loop with
+  `400 The reasoning_content in the thinking mode must be passed back to the API`. Injecting
+  `thinking=disabled` makes flash work; the two legacy aliases work as-is.
+- `extra_body` cannot reach the SDK through any Autogen 0.6.1 public surface: the constructor
+  drops it silently (filtered by the `create_kwargs` whitelist, no error raised) and
+  `extra_create_args` rejects it outright (`ValueError: Extra create args are invalid:
+  {'extra_body'}`). `reasoning_effort` does pass through but has no "off" level. The only
+  measured working injection is `client._create_args["extra_body"] = {"thinking": ...}` -
+  a private attribute, so treat it as fragile across autogen-ext upgrades.
+- Whether the `deepseek-chat` / `deepseek-reasoner` aliases accept image input is **unverified**,
+  even though the model actually serving them (V4.1 Flash) is multimodal. Keep `vision: False`
+  for these two clients until measured.
 - `seed=42` / `temperature=0` on all three clients is a reproducibility choice, not
   differentiation; outputs still vary somewhat between runs.

@@ -31,9 +31,24 @@ def _require_key(name: str) -> str:
     return value
 
 
-# deepseek-chat has no image input support, hence "vision": False. autogen strips
-# images from the context when vision is False and raises when they are passed on,
-# which is the behaviour we want rather than an opaque error from the API.
+# Model names: `deepseek-chat` and `deepseek-reasoner` are legacy aliases. Measured against the
+# live API they still respond, and both are served by DeepSeek-V4.1-Flash - the aliases differ
+# only in thinking mode (off / on). `deepseek-v4-pro` is a genuinely separate model.
+#
+# Do NOT "modernise" the two strings below to `deepseek-flash`. Thinking mode is enabled by
+# default at effort high, this framework never sends `reasoning_content` back (it maps
+# `thought` into `content`), and DeepSeek then rejects the multi-turn tool loop with:
+#     400 The `reasoning_content` in the thinking mode must be passed back to the API.
+# That would break exactly Orchestrator and TaskExecutor - the two agents that pass `tools=`.
+# If switching to `deepseek-flash` ever becomes unavoidable, thinking must be disabled too.
+# autogen-ext 0.6.1 has no supported way to do that: the constructor silently drops `extra_body`
+# and `extra_create_args` rejects it; only assigning
+# `client._create_args["extra_body"] = {"thinking": {"type": "disabled"}}` was observed to work.
+#
+# vision is declared False for these text-oriented clients. autogen strips images when vision is
+# False and raises if they are passed anyway, which is the safer behaviour. Whether the aliases
+# accept images (the model serving them is multimodal) has not been measured - re-test before
+# flipping this to True.
 deepseekV3 = OpenAIChatCompletionClient(
             model="deepseek-chat",
             base_url="https://api.deepseek.com/v1",
